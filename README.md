@@ -33,6 +33,12 @@ LICENSE                              Tous droits réservés (projet commercial p
 Site 100% statique, sans dépendance ni build — déployable tel quel sur
 GitHub Pages, Vercel, Netlify, etc.
 
+## Déploiement
+
+Déployé en continu sur Vercel (projet `velodom-chambery-prod`), relié à ce
+dépôt : chaque push sur `main` déclenche automatiquement un nouveau build
+et un nouveau déploiement de production.
+
 ⚠️ Les pages légales contiennent des champs `[à compléter]` (SIRET, adresse,
 forme juridique...) à remplir avec les vraies informations de l'entreprise,
 idéalement relues par un professionnel du droit, avant toute mise en ligne
