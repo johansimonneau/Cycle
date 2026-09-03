@@ -4,25 +4,114 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VéloDom — Réparation vélo à domicile à Chambéry, en abonnement</title>
-<meta name="description" content="VéloDom entretient et répare votre vélo à domicile ou au bureau à Chambéry et dans le Grand Chambéry. Abonnements dès 9,90€/mois, sans atelier, sans file d'attente.">
+<meta name="description" content="VéloDom répare et entretient votre vélo à domicile ou au bureau à Chambéry, sur abonnement dès 9,90€/mois. Sans atelier, sans file d'attente.">
+<!-- Update this canonical origin once the site is live on its real domain -->
+<link rel="canonical" href="https://velodom-chambery.fr/">
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#123524">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VéloDom">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://velodom-chambery.fr/">
+<meta property="og:title" content="VéloDom — Réparation vélo à domicile à Chambéry">
+<meta property="og:description" content="Réparation et entretien de vélo à domicile ou au bureau, sur abonnement, à Chambéry et dans le Grand Chambéry. Dès 9,90€/mois.">
+<meta property="og:image" content="https://velodom-chambery.fr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VéloDom — Réparation vélo à domicile à Chambéry">
+<meta name="twitter:description" content="Réparation et entretien de vélo à domicile ou au bureau, sur abonnement, à Chambéry et dans le Grand Chambéry. Dès 9,90€/mois.">
+<meta name="twitter:image" content="https://velodom-chambery.fr/assets/og-image.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<!-- Données structurées : identité de l'entreprise (à compléter : adresse et téléphone réels) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "VéloDom",
   "description": "Réparation et entretien de vélos à domicile ou au bureau, sur abonnement, à Chambéry et dans le Grand Chambéry.",
-  "areaServed": "Chambéry, Savoie, France",
-  "priceRange": "9,90€ - 24,90€",
-  "telephone": "+33-4-00-00-00-00"
+  "url": "https://velodom-chambery.fr/",
+  "image": "https://velodom-chambery.fr/assets/og-image.png",
+  "areaServed": [
+    "Chambéry", "Cognin", "Barberaz", "La Ravoire", "Bassens",
+    "Jacob-Bellecombette", "Challes-les-Eaux", "Grand Chambéry"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chambéry",
+    "addressRegion": "Savoie",
+    "addressCountry": "FR"
+  },
+  "priceRange": "9,90€ - 24,90€"
+}
+</script>
+
+<!-- Données structurées : FAQ (reprend mot pour mot les questions/réponses affichées plus bas) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Dois-je être présent pendant l'intervention ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non, si votre vélo est accessible (garage, local à vélo, hall d'immeuble). Un créneau de dépôt de clé ou de badge peut être organisé."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Intervenez-vous sur les vélos électriques ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, dès la formule Confort pour le diagnostic et les réglages ; la formule Premium couvre l'entretien complet des vélos électriques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je résilier mon abonnement à tout moment ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, sans engagement de durée minimale ni frais de résiliation. Le mois en cours reste dû."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que se passe-t-il si une pièce n'est pas incluse dans mon forfait ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vous recevez un devis avant toute intervention supplémentaire — jamais de facture surprise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel est le prix d'une révision de vélo à domicile à Chambéry ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VéloDom propose 3 formules d'abonnement : Essentiel à 9,90€/mois (1 révision légère par an), Confort à 16,90€/mois (2 révisions complètes par an, formule la plus choisie), et Premium à 24,90€/mois (entretien illimité, compatible vélo électrique). Sans engagement de durée minimale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dans quelles communes VéloDom intervient-il ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VéloDom intervient à Chambéry centre, Cognin, Barberaz, La Ravoire, Bassens, Jacob-Bellecombette, Challes-les-Eaux, et sur devis à Sonnaz et ses environs."
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -245,6 +334,14 @@
           <summary>Que se passe-t-il si une pièce n'est pas incluse dans mon forfait ?</summary>
           <p>Vous recevez un devis avant toute intervention supplémentaire — jamais de facture surprise.</p>
         </details>
+        <details class="faq-item">
+          <summary>Quel est le prix d'une révision de vélo à domicile à Chambéry ?</summary>
+          <p>VéloDom propose 3 formules d'abonnement : Essentiel à 9,90€/mois (1 révision légère par an), Confort à 16,90€/mois (2 révisions complètes par an, formule la plus choisie), et Premium à 24,90€/mois (entretien illimité, compatible vélo électrique). Sans engagement de durée minimale.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Dans quelles communes VéloDom intervient-il ?</summary>
+          <p>VéloDom intervient à Chambéry centre, Cognin, Barberaz, La Ravoire, Bassens, Jacob-Bellecombette, Challes-les-Eaux, et sur devis à Sonnaz et ses environs.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -255,10 +352,13 @@
         <h2 class="section-title">Recevez votre devis gratuit</h2>
         <p class="section-sub">Réponse sous 24h ouvrées. Aucun engagement.</p>
       </div>
-      <form class="devis-form" id="devisForm">
+      <form class="devis-form" id="devisForm" action="https://formsubmit.co/johan.simonneau.pro@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nouvelle demande de devis VéloDom">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
         <div class="visually-hidden" aria-hidden="true">
           <label for="website">Ne pas remplir ce champ</label>
-          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          <input type="text" id="website" name="_honey" tabindex="-1" autocomplete="off">
         </div>
         <div class="form-row">
           <label for="nom">Nom</label>
