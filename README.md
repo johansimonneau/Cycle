@@ -39,10 +39,10 @@ Déployé en continu sur Vercel (projet `velodom-chambery-prod`), relié à ce
 dépôt : chaque push sur `main` déclenche automatiquement un nouveau build
 et un nouveau déploiement de production.
 
-⚠️ Les pages légales contiennent des champs `[à compléter]` (SIRET, adresse,
-forme juridique...) à remplir avec les vraies informations de l'entreprise,
-idéalement relues par un professionnel du droit, avant toute mise en ligne
-commerciale ou campagne publicitaire.
+⚠️ Les pages légales utilisent l'identité de l'auto-entreprise existante de
+l'éditeur (Johan Simonneau, SIRET 879 545 564 00020) — à faire relire par un
+professionnel du droit avant toute mise en ligne commerciale ou campagne
+publicitaire. Il manque encore un numéro de téléphone de contact public.
 
 ## Voir le site en local
 
