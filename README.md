@@ -17,13 +17,26 @@ Chambéry.
 ## Structure du projet
 
 ```
-index.html      Page principale (hero, formules, zone, FAQ, formulaire de devis)
-css/style.css   Styles (thème clair/sombre automatique, responsive)
-js/main.js      Menu mobile, gestion du formulaire de devis
+index.html                          Page principale (hero, formules, zone, FAQ, formulaire de devis)
+mentions-legales.html                Mentions légales (LCEN)
+politique-de-confidentialite.html    Politique de confidentialité (RGPD)
+politique-de-cookies.html            Politique de cookies
+cgv.html                              Conditions générales de vente
+css/style.css                        Styles (thème clair/sombre automatique, responsive)
+js/main.js                           Menu mobile, gestion du formulaire de devis
+js/cookie-consent.js                 Bandeau de consentement cookies
+assets/                               Logo, icône de marque, favicons générés
+vercel.json                          En-têtes de sécurité (CSP, HSTS, etc.)
+LICENSE                              Tous droits réservés (projet commercial privé)
 ```
 
 Site 100% statique, sans dépendance ni build — déployable tel quel sur
 GitHub Pages, Vercel, Netlify, etc.
+
+⚠️ Les pages légales contiennent des champs `[à compléter]` (SIRET, adresse,
+forme juridique...) à remplir avec les vraies informations de l'entreprise,
+idéalement relues par un professionnel du droit, avant toute mise en ligne
+commerciale ou campagne publicitaire.
 
 ## Voir le site en local
 

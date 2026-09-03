@@ -23,10 +23,14 @@ nav.querySelectorAll('a').forEach((link) => {
 const devisForm = document.getElementById('devisForm');
 const formStatus = document.getElementById('formStatus');
 
-devisForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  // Placeholder submission: no backend is wired up yet.
-  // Replace with a real endpoint (Formspree, Netlify Forms, etc.) before running ads.
-  formStatus.textContent = 'Merci ! Votre demande est enregistrée, nous revenons vers vous sous 24h ouvrées.';
-  devisForm.reset();
-});
+if (devisForm) {
+  devisForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const honeypot = devisForm.querySelector('#website');
+    if (honeypot && honeypot.value) return; // bot filled the trap field, silently drop
+    // Placeholder submission: no backend is wired up yet.
+    // Replace with a real endpoint (Formspree, Netlify Forms, etc.) before running ads.
+    formStatus.textContent = 'Merci ! Votre demande est enregistrée, nous revenons vers vous sous 24h ouvrées.';
+    devisForm.reset();
+  });
+}

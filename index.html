@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VéloDom — Réparation vélo à domicile à Chambéry, en abonnement</title>
 <meta name="description" content="VéloDom entretient et répare votre vélo à domicile ou au bureau à Chambéry et dans le Grand Chambéry. Abonnements dès 9,90€/mois, sans atelier, sans file d'attente.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚲</text></svg>">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#123524">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,7 +30,7 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#" class="logo">Vélo<span>Dom</span></a>
+    <a href="/" class="logo"><img src="/assets/icon.svg" class="logo-mark" width="32" height="32" alt="">Vélo<span>Dom</span></a>
     <nav class="nav" id="nav">
       <a href="#comment-ca-marche">Comment ça marche</a>
       <a href="#abonnements">Abonnements</a>
@@ -252,6 +256,10 @@
         <p class="section-sub">Réponse sous 24h ouvrées. Aucun engagement.</p>
       </div>
       <form class="devis-form" id="devisForm">
+        <div class="visually-hidden" aria-hidden="true">
+          <label for="website">Ne pas remplir ce champ</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
         <div class="form-row">
           <label for="nom">Nom</label>
           <input type="text" id="nom" name="nom" required autocomplete="name">
@@ -288,9 +296,17 @@
   <div class="container footer-inner">
     <p>&copy; <span id="year"></span> VéloDom — Réparation vélo à domicile, Chambéry.</p>
     <p class="footer-note">Projet en phase de test de marché. Les tarifs et zones sont indicatifs.</p>
+    <ul class="footer-legal">
+      <li><a href="/mentions-legales.html">Mentions légales</a></li>
+      <li><a href="/politique-de-confidentialite.html">Politique de confidentialité</a></li>
+      <li><a href="/politique-de-cookies.html">Politique de cookies</a></li>
+      <li><a href="/cgv.html">CGV</a></li>
+      <li><button type="button" id="openCookiePrefs">Gérer mes cookies</button></li>
+    </ul>
   </div>
 </footer>
 
+<script src="js/cookie-consent.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
