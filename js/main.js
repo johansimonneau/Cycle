@@ -1,5 +1,10 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const heroScene = document.querySelector('.hero-scene');
+if (heroScene && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  if (typeof heroScene.pauseAnimations === 'function') heroScene.pauseAnimations();
+}
+
 const navToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
 

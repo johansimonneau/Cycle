@@ -42,6 +42,44 @@
 
 <main>
   <section class="hero">
+    <!-- Optional real video background: drop a licensed file at assets/video/hero.mp4
+         (+ assets/video/hero.webm) and uncomment. Falls back to the animated
+         SVG scene below when no video is present. -->
+    <!--
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/video/hero-poster.jpg">
+      <source src="assets/video/hero.webm" type="video/webm">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    -->
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="hero-scene" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0c2e22"/>
+            <stop offset="55%" stop-color="#1f6b4a"/>
+            <stop offset="100%" stop-color="#ef7f2e"/>
+          </linearGradient>
+          <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffe3bb" stop-opacity="0.95"/>
+            <stop offset="55%" stop-color="#ffd9a8" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#ffd9a8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1440" height="800" fill="url(#sky)"/>
+        <circle class="hero-sun-glow" cx="1160" cy="360" r="240" fill="url(#sunGlow)"/>
+        <circle class="hero-sun" cx="1160" cy="360" r="62" fill="#fff3df"/>
+        <path class="mtn mtn-back" d="M0,500 L120,430 L230,480 L340,380 L460,460 L580,360 L700,440 L820,340 L940,430 L1060,370 L1180,440 L1300,380 L1440,450 L1440,800 L0,800 Z" fill="#0d2a1f"/>
+        <path class="mtn mtn-mid" d="M0,580 L150,500 L280,560 L420,470 L560,550 L700,460 L860,560 L1000,480 L1160,560 L1300,500 L1440,560 L1440,800 L0,800 Z" fill="#0a2019"/>
+        <path class="mtn mtn-front" d="M0,700 L200,650 L400,690 L650,630 L900,680 L1150,640 L1440,690 L1440,800 L0,800 Z" fill="#071913"/>
+        <path id="heroRoad" class="hero-road" d="M -50 780 C 300 700, 500 650, 700 600 S 1100 500, 1500 420" stroke="#f3ede2" stroke-width="6" stroke-dasharray="14 14" fill="none" opacity="0.55"/>
+        <circle class="hero-cyclist" r="8" fill="#ef7f2e">
+          <animateMotion dur="9s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#heroRoad"></mpath>
+          </animateMotion>
+        </circle>
+      </svg>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="container hero-inner">
       <div class="hero-text">
         <p class="eyebrow">Chambéry &amp; Grand Chambéry</p>
