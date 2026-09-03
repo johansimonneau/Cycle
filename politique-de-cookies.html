@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de cookies — VéloDom</title>
+<meta name="description" content="Quels cookies utilise le site VéloDom et comment gérer vos préférences.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#123524">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/assets/icon.svg" class="logo-mark" width="32" height="32" alt="">Vélo<span>Dom</span></a>
+    <nav class="nav" id="nav">
+      <a href="/#comment-ca-marche">Comment ça marche</a>
+      <a href="/#abonnements">Abonnements</a>
+      <a href="/#zone">Zone desservie</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a href="/#devis" class="btn btn-primary btn-header">Devis gratuit</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="legal-main">
+  <div class="container">
+    <a href="/" class="back-home">&larr; Retour à l'accueil</a>
+    <h1>Politique de cookies</h1>
+    <p class="legal-intro">Cette page explique ce qu'est un cookie, quels cookies sont utilisés sur le site VéloDom, et comment vous pouvez gérer vos préférences à tout moment.</p>
+
+    <h2>1. Qu'est-ce qu'un cookie ?</h2>
+    <p>Un cookie est un petit fichier texte déposé sur votre appareil lors de la visite d'un site web. Il permet notamment de mémoriser vos préférences, de mesurer l'audience du site ou d'afficher des publicités pertinentes.</p>
+
+    <h2>2. Cookies actuellement utilisés</h2>
+    <table>
+      <thead>
+        <tr><th>Nom</th><th>Finalité</th><th>Durée</th><th>Type</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>velodom_cookie_consent</td><td>Mémorise votre choix concernant les cookies</td><td>6 mois</td><td>Essentiel (dépôt sans consentement requis)</td></tr>
+      </tbody>
+    </table>
+    <p>À ce jour, VéloDom n'utilise aucun cookie de mesure d'audience ni de publicité : le site ne dépose que le cookie technique strictement nécessaire à la mémorisation de votre choix.</p>
+
+    <h2>3. Cookies susceptibles d'être ajoutés</h2>
+    <p>Dans le cadre de nos campagnes publicitaires (Google Ads notamment), nous pourrons être amenés à ajouter des cookies de mesure d'audience et de suivi de conversion. Ces cookies ne seront déposés qu'après avoir recueilli votre consentement explicite via le bandeau cookies.</p>
+    <table>
+      <thead>
+        <tr><th>Finalité</th><th>Exemple de fournisseur</th><th>Soumis à consentement</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mesure d'audience</td><td>Google Analytics</td><td>Oui</td></tr>
+        <tr><td>Suivi de conversion publicitaire</td><td>Google Ads</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Gérer vos préférences</h2>
+    <p>Vous pouvez à tout moment modifier votre choix en cliquant sur « Gérer mes cookies » dans le pied de page du site, ou en supprimant les cookies depuis les réglages de votre navigateur.</p>
+
+    <h2>5. Conservation de votre choix</h2>
+    <p>Votre préférence est conservée 6 mois. Passé ce délai, le bandeau de consentement vous sera à nouveau présenté.</p>
+
+    <p class="legal-updated">Dernière mise à jour : septembre 2026.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> VéloDom — Réparation vélo à domicile, Chambéry.</p>
+    <p class="footer-note">Projet en phase de test de marché. Les tarifs et zones sont indicatifs.</p>
+    <ul class="footer-legal">
+      <li><a href="/mentions-legales.html">Mentions légales</a></li>
+      <li><a href="/politique-de-confidentialite.html">Politique de confidentialité</a></li>
+      <li><a href="/politique-de-cookies.html">Politique de cookies</a></li>
+      <li><a href="/cgv.html">CGV</a></li>
+      <li><button type="button" id="openCookiePrefs">Gérer mes cookies</button></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/cookie-consent.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

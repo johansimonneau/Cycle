@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VéloDom — Réparation vélo à domicile à Chambéry, en abonnement</title>
+<meta name="description" content="VéloDom entretient et répare votre vélo à domicile ou au bureau à Chambéry et dans le Grand Chambéry. Abonnements dès 9,90€/mois, sans atelier, sans file d'attente.">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#123524">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "VéloDom",
+  "description": "Réparation et entretien de vélos à domicile ou au bureau, sur abonnement, à Chambéry et dans le Grand Chambéry.",
+  "areaServed": "Chambéry, Savoie, France",
+  "priceRange": "9,90€ - 24,90€",
+  "telephone": "+33-4-00-00-00-00"
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/assets/icon.svg" class="logo-mark" width="32" height="32" alt="">Vélo<span>Dom</span></a>
+    <nav class="nav" id="nav">
+      <a href="#comment-ca-marche">Comment ça marche</a>
+      <a href="#abonnements">Abonnements</a>
+      <a href="#zone">Zone desservie</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#devis" class="btn btn-primary btn-header">Devis gratuit</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <!-- Optional real video background: drop a licensed file at assets/video/hero.mp4
+         (+ assets/video/hero.webm) and uncomment. Falls back to the animated
+         SVG scene below when no video is present. -->
+    <!--
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/video/hero-poster.jpg">
+      <source src="assets/video/hero.webm" type="video/webm">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    -->
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="hero-scene" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0c2e22"/>
+            <stop offset="55%" stop-color="#1f6b4a"/>
+            <stop offset="100%" stop-color="#ef7f2e"/>
+          </linearGradient>
+          <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffe3bb" stop-opacity="0.95"/>
+            <stop offset="55%" stop-color="#ffd9a8" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#ffd9a8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1440" height="800" fill="url(#sky)"/>
+        <circle class="hero-sun-glow" cx="1160" cy="360" r="240" fill="url(#sunGlow)"/>
+        <circle class="hero-sun" cx="1160" cy="360" r="62" fill="#fff3df"/>
+        <path class="mtn mtn-back" d="M0,500 L120,430 L230,480 L340,380 L460,460 L580,360 L700,440 L820,340 L940,430 L1060,370 L1180,440 L1300,380 L1440,450 L1440,800 L0,800 Z" fill="#0d2a1f"/>
+        <path class="mtn mtn-mid" d="M0,580 L150,500 L280,560 L420,470 L560,550 L700,460 L860,560 L1000,480 L1160,560 L1300,500 L1440,560 L1440,800 L0,800 Z" fill="#0a2019"/>
+        <path class="mtn mtn-front" d="M0,700 L200,650 L400,690 L650,630 L900,680 L1150,640 L1440,690 L1440,800 L0,800 Z" fill="#071913"/>
+        <path id="heroRoad" class="hero-road" d="M -50 780 C 300 700, 500 650, 700 600 S 1100 500, 1500 420" stroke="#f3ede2" stroke-width="6" stroke-dasharray="14 14" fill="none" opacity="0.55"/>
+        <circle class="hero-cyclist" r="8" fill="#ef7f2e">
+          <animateMotion dur="9s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#heroRoad"></mpath>
+          </animateMotion>
+        </circle>
+      </svg>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Chambéry &amp; Grand Chambéry</p>
+        <h1>La révision vélo qui vient <span class="accent">à vous</span>.</h1>
+        <p class="hero-sub">Un mécanicien certifié intervient à votre domicile ou au bureau. Fini l'atelier bondé et les délais à rallonge — votre vélo repart prêt à rouler, pendant que vous continuez votre journée.</p>
+        <div class="hero-cta">
+          <a href="#devis" class="btn btn-primary btn-lg">Recevoir mon devis gratuit</a>
+          <a href="#abonnements" class="btn btn-ghost btn-lg">Voir les abonnements</a>
+        </div>
+        <ul class="hero-trust">
+          <li>🔧 Mécanicien certifié</li>
+          <li>📍 Intervention à domicile ou au bureau</li>
+          <li>⏱ Sous 48h, sans rendez-vous en atelier</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="bike-card">
+          <div class="bike-card-row">
+            <span class="dot dot-green"></span>
+            <span>Diagnostic offert</span>
+          </div>
+          <div class="bike-card-row">
+            <span class="dot dot-orange"></span>
+            <span>Intervention à domicile</span>
+          </div>
+          <div class="bike-card-row">
+            <span class="dot dot-blue"></span>
+            <span>Suivi d'entretien inclus</span>
+          </div>
+          <div class="bike-emoji">🚲</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-inner">
+      <div class="stat"><strong>110&nbsp;km+</strong><span>de pistes cyclables à Chambéry</span></div>
+      <div class="stat"><strong>48h</strong><span>délai moyen d'intervention</span></div>
+      <div class="stat"><strong>3</strong><span>formules d'abonnement</span></div>
+      <div class="stat"><strong>0</strong><span>trajet en atelier</span></div>
+    </div>
+  </section>
+
+  <section id="comment-ca-marche" class="section">
+    <div class="container">
+      <h2 class="section-title">Comment ça marche</h2>
+      <p class="section-sub">Trois étapes, zéro déplacement de votre part.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Réservez en ligne</h3>
+          <p>Choisissez un créneau et décrivez votre vélo (route, VTT, ville ou électrique) en 2 minutes.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>On vient à vous</h3>
+          <p>Notre mécanicien intervient chez vous, au bureau ou dans votre résidence, avec son atelier mobile.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Votre vélo repart nickel</h3>
+          <p>Freins, transmission, pneus, réglages : vous récupérez un vélo révisé, avec un carnet d'entretien à jour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="abonnements" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Des abonnements pensés pour rouler serein</h2>
+      <p class="section-sub">Sans engagement long, résiliable à tout moment. Prix pour un vélo, formules multi-vélos sur devis.</p>
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <h3>Essentiel</h3>
+          <p class="price"><span>9,90€</span>/mois</p>
+          <p class="price-desc">Pour un usage urbain régulier</p>
+          <ul class="price-features">
+            <li>1 révision légère par an</li>
+            <li>-15% sur toutes les réparations</li>
+            <li>Contrôle freins &amp; pneus offert</li>
+            <li>Réservation en ligne prioritaire</li>
+          </ul>
+          <a href="#devis" class="btn btn-outline">Choisir Essentiel</a>
+        </div>
+
+        <div class="price-card price-card-featured">
+          <p class="price-badge">Le plus choisi</p>
+          <h3>Confort</h3>
+          <p class="price"><span>16,90€</span>/mois</p>
+          <p class="price-desc">Pour rouler toute l'année sans y penser</p>
+          <ul class="price-features">
+            <li>2 révisions complètes par an</li>
+            <li>-25% sur toutes les réparations</li>
+            <li>Dépannage prioritaire sous 48h</li>
+            <li>Pièces d'usure courantes incluses*</li>
+          </ul>
+          <a href="#devis" class="btn btn-primary">Choisir Confort</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Premium</h3>
+          <p class="price"><span>24,90€</span>/mois</p>
+          <p class="price-desc">Pour les vélos électriques &amp; usages intensifs</p>
+          <ul class="price-features">
+            <li>Entretien illimité (hors casse)</li>
+            <li>Intervention prioritaire sous 24h</li>
+            <li>Vélo de prêt en cas d'immobilisation</li>
+            <li>Compatible vélo électrique</li>
+          </ul>
+          <a href="#devis" class="btn btn-outline">Choisir Premium</a>
+        </div>
+
+      </div>
+      <p class="price-note">*Chaîne, câbles, patins de frein — hors pneus et batterie. Devis systématique avant toute pièce non incluse.</p>
+    </div>
+  </section>
+
+  <section id="zone" class="section">
+    <div class="container zone-inner">
+      <div>
+        <h2 class="section-title">Une zone de service qui suit les pistes cyclables</h2>
+        <p class="section-sub">On intervient partout où Grand Chambéry a investi dans le vélo au quotidien.</p>
+        <ul class="zone-list">
+          <li>Chambéry centre</li>
+          <li>Cognin</li>
+          <li>Barberaz</li>
+          <li>La Ravoire</li>
+          <li>Bassens</li>
+          <li>Jacob-Bellecombette</li>
+          <li>Challes-les-Eaux</li>
+          <li>Sonnaz &amp; environs (sur devis)</li>
+        </ul>
+      </div>
+      <div class="zone-callout">
+        <p>« Grand Chambéry investit ~3M€/an sur 10 ans dans son réseau cyclable. VéloDom accompagne cette hausse d'usage quotidien avec un service qui vient jusqu'à vous. »</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Questions fréquentes</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Dois-je être présent pendant l'intervention ?</summary>
+          <p>Non, si votre vélo est accessible (garage, local à vélo, hall d'immeuble). Un créneau de dépôt de clé ou de badge peut être organisé.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Intervenez-vous sur les vélos électriques ?</summary>
+          <p>Oui, dès la formule Confort pour le diagnostic et les réglages ; la formule Premium couvre l'entretien complet des vélos électriques.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Puis-je résilier mon abonnement à tout moment ?</summary>
+          <p>Oui, sans engagement de durée minimale ni frais de résiliation. Le mois en cours reste dû.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Que se passe-t-il si une pièce n'est pas incluse dans mon forfait ?</summary>
+          <p>Vous recevez un devis avant toute intervention supplémentaire — jamais de facture surprise.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="devis" class="section devis-section">
+    <div class="container devis-inner">
+      <div class="devis-text">
+        <h2 class="section-title">Recevez votre devis gratuit</h2>
+        <p class="section-sub">Réponse sous 24h ouvrées. Aucun engagement.</p>
+      </div>
+      <form class="devis-form" id="devisForm">
+        <div class="visually-hidden" aria-hidden="true">
+          <label for="website">Ne pas remplir ce champ</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" required autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="quartier">Quartier / commune</label>
+          <input type="text" id="quartier" name="quartier" placeholder="Ex. Chambéry centre, Cognin...">
+        </div>
+        <div class="form-row">
+          <label for="typeVelo">Type de vélo</label>
+          <select id="typeVelo" name="typeVelo">
+            <option value="ville">Ville</option>
+            <option value="route">Route</option>
+            <option value="vtt">VTT</option>
+            <option value="electrique">Électrique</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Recevoir mon devis gratuit</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> VéloDom — Réparation vélo à domicile, Chambéry.</p>
+    <p class="footer-note">Projet en phase de test de marché. Les tarifs et zones sont indicatifs.</p>
+    <ul class="footer-legal">
+      <li><a href="/mentions-legales.html">Mentions légales</a></li>
+      <li><a href="/politique-de-confidentialite.html">Politique de confidentialité</a></li>
+      <li><a href="/politique-de-cookies.html">Politique de cookies</a></li>
+      <li><a href="/cgv.html">CGV</a></li>
+      <li><button type="button" id="openCookiePrefs">Gérer mes cookies</button></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/cookie-consent.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
