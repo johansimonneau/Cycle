@@ -28,9 +28,30 @@ if (devisForm) {
     event.preventDefault();
     const honeypot = devisForm.querySelector('#website');
     if (honeypot && honeypot.value) return; // bot filled the trap field, silently drop
-    // Placeholder submission: no backend is wired up yet.
-    // Replace with a real endpoint (Formspree, Netlify Forms, etc.) before running ads.
-    formStatus.textContent = 'Merci ! Votre demande est enregistrée, nous revenons vers vous sous 24h ouvrées.';
-    devisForm.reset();
+
+    const submitBtn = devisForm.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    formStatus.textContent = 'Envoi en cours...';
+
+    const ajaxAction = devisForm.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+
+    fetch(ajaxAction, {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new FormData(devisForm)
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error('request failed');
+        formStatus.textContent = 'Merci ! Votre demande est enregistrée, nous revenons vers vous sous 24h ouvrées.';
+        devisForm.reset();
+      })
+      .catch(() => {
+        formStatus.innerHTML =
+          "Une erreur est survenue à l'envoi. Réessayez, ou écrivez-nous directement à " +
+          '<a href="mailto:johan.simonneau.pro@gmail.com">johan.simonneau.pro@gmail.com</a>.';
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+      });
   });
 }
